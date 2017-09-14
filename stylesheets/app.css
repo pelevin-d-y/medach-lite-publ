@@ -1,0 +1,969 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+@font-face {
+  font-family: 'Time-Roman';
+  src: url("../fonts/Time-Roman.eot");
+  src: url("../fonts/Time-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/Time-Roman.woff") format("woff"), url("../fonts/Time-Roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'LucidaGrande-Bold';
+  src: url("../fonts/LucidaGrande-Bold.eot");
+  src: url("../fonts/LucidaGrande-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/LucidaGrande-Bold.woff") format("woff"), url("../fonts/LucidaGrande-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: 'Time-Roman', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #505666; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #505666; }
+
+.container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1280px;
+  min-width: 1280px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto; }
+
+.btn {
+  display: inline-block;
+  padding: 15px 26px 14px; }
+
+.header {
+  min-height: 62px;
+  font-family: LucidaGrande-Bold; }
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  width: 100%;
+  min-height: 62px; }
+
+.header__main-nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 694px;
+  width: 100%;
+  font-size: 10px; }
+
+.main-nav__item {
+  position: relative;
+  display: inline-block; }
+
+.main-nav__item.main-nav__item::before {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: #505666; }
+
+.main-nav__item:hover.main-nav__item::before {
+  opacity: 1; }
+
+.header__wrapper-dop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 350px;
+  width: 100%; }
+
+.header__serch-wrapper {
+  width: 122px; }
+
+.header__serch-wrapper label {
+  display: flex;
+  align-items: center; }
+
+.header__search {
+  width: 52px;
+  min-width: 52px;
+  max-width: 140px;
+  border: none;
+  font-size: 10px;
+  outline: none; }
+
+.header__search:focus {
+  border-bottom: 0.5px solid #0ea4fb; }
+
+.header__search-buffer {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  visibility: hidden;
+  white-space: nowrap;
+  font-size: 10px; }
+
+.header__search-icon {
+  flex-shrink: 0;
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin-right: 8px;
+  margin-left: auto;
+  background: url("../images/search.png") no-repeat center;
+  background-size: contain; }
+
+.header__socials-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px; }
+
+.header__social {
+  display: block;
+  width: 15px;
+  height: 14px;
+  margin: 0 5px; }
+
+.header__socials-vk {
+  background: url("../images/vk.png") no-repeat center; }
+
+.header__socials-facebook {
+  background: url("../images/facebook.png") no-repeat center; }
+
+.header__socials-telegram {
+  background: url("../images/telegram.png") no-repeat center; }
+
+.calendar {
+  position: relative;
+  font-size: 10px; }
+
+.calendar::before {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: #505666; }
+
+.calendar:hover::before {
+  opacity: 1; }
+
+.header__medach {
+  width: 46px;
+  height: 7px;
+  background: url("../images/medach.png") no-repeat center;
+  background-size: contain; }
+
+.main__big-foto {
+  display: block;
+  width: 20%;
+  height: 25vw; }
+
+.big-fotos {
+  display: flex; }
+
+.main__big-foto-1 {
+  background: url("../images/skull.png") no-repeat center;
+  background-size: contain; }
+
+.main__big-foto-2 {
+  background: url("../images/good-bad.png") no-repeat center;
+  background-size: contain; }
+
+.main__big-foto-3 {
+  background: url("../images/dies-irae.png") no-repeat center;
+  background-size: contain; }
+
+.main__big-foto-4 {
+  background: url("../images/diagnosis-logic.png") no-repeat center;
+  background-size: contain; }
+
+.main__big-fotos__cloock {
+  width: 20%; }
+
+.big-fotos__container {
+  padding: 0; }
+
+.main__big-fotos__cloock {
+  background: #f8f8f8; }
+
+.main__big-fotos__cloock-icon {
+  width: 67.26px;
+  height: 67.26px;
+  margin: 0 auto;
+  margin-top: 94px;
+  background: url("../images/clock-icon.png") no-repeat center;
+  background-size: contain; }
+
+.main__big-fotos__cloock-digits {
+  text-align: center;
+  margin-top: 35.6px;
+  font-family: LucidaGrande-Bold;
+  color: #BEBEBE; }
+
+.calendar__title {
+  margin-top: 95px;
+  margin-bottom: 104px;
+  color: #686C7A;
+  font-family: LucidaGrande-Bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center; }
+
+.calendar__title-year {
+  margin-bottom: 80px;
+  color: #686C7A;
+  font-family: LucidaGrande-Bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center; }
+
+.calendar__wrapper {
+  max-width: 901px;
+  width: 100%;
+  margin: 0 auto; }
+
+.calendar-digits .month {
+  font-family: LucidaGrande-Bold;
+  font-size: 17px;
+  line-height: 20px; }
+
+.calendar-digits {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 164px;
+  width: 100%;
+  margin-right: 63px;
+  margin-bottom: 53px; }
+
+.calendar-digits:nth-child(4n) {
+  margin-right: 0; }
+
+.calendar-digits td {
+  padding-right: 5px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: LucidaGrande-Bold; }
+
+.calendar-digits .month {
+  padding-bottom: 20px; }
+
+.calendar-digits a:hover {
+  text-decoration: underline; }
+
+.calendar__grey {
+  padding-top: 40px;
+  background-color: #F8F8F8; }
+
+.data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+  margin-top: 14px; }
+
+.data-text {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  font-family: LucidaGrande-Bold;
+  text-align: center; }
+
+.data__circle {
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  width: 9px;
+  height: 9px;
+  background: #ff7e7e;
+  border-radius: 50%; }
+
+.main-description {
+  margin-top: 66px;
+  padding-bottom: 56px; }
+
+.main-description .container {
+  display: flex;
+  justify-content: space-between; }
+
+.foto-column {
+  max-width: 254.43px;
+  width: 100%; }
+
+.foto-column__poster {
+  max-width: 254.43px;
+  width: 100%;
+  height: 321.17px;
+  margin-top: 8px;
+  background: url("../images/good-bad.png") no-repeat center; }
+
+.desc-column {
+  max-width: 622px;
+  width: 100%;
+  font-size: 17px;
+  line-height: 20px; }
+
+.desc-column__title {
+  margin-bottom: 46px;
+  font-family: LucidaGrande-Bold;
+  font-size: 36px;
+  line-height: 43px; }
+
+.info-column {
+  max-width: 218px;
+  width: 100%;
+  margin-top: 90px;
+  font-size: 12px;
+  line-height: 14px; }
+
+.info-column__item {
+  margin-bottom: 11px; }
+
+.info-column__infographic a {
+  text-decoration: underline; }
+
+.info-column__data {
+  text-decoration: underline;
+  font-style: italic; }
+
+.desc-column__map {
+  height: 510px;
+  width: 721px;
+  margin: 0 auto;
+  margin-top: 44px;
+  background: url("../images/map.png") no-repeat center; }
+
+.desc-bottom__wrapper {
+  max-width: 617px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 56px;
+  font-size: 17px;
+  line-height: 20px; }
+
+.desc-column__bottom-title {
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23px; }
+
+.main-index {
+  padding-bottom: 50px; }
+
+.min-fotos__day-data {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 19px;
+  font-family: LucidaGrande-Bold;
+  font-size: 12px;
+  margin-bottom: 14px; }
+
+.min-fotos__day-data-digit {
+  margin-left: auto; }
+
+.min-fotos__day-data-circle {
+  display: block;
+  width: 9px;
+  height: 9px;
+  margin-top: 3px;
+  margin-left: 13px;
+  background: #0da4fa;
+  border-radius: 50%; }
+
+.min-fotos__day-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto; }
+
+.min-fotos__item {
+  width: 167px;
+  font-size: 12px;
+  color: #515666;
+  line-height: 16px; }
+
+.min-fotos__item-foto {
+  display: block;
+  width: 100%;
+  height: 219px;
+  margin-bottom: 10px; }
+
+.min-fotos__item-foto-1 {
+  background: url("../images/pain.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-2 {
+  background: url("../images/stress-brain.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-3 {
+  background: url("../images/mouth.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-4 {
+  background: url("../images/vaccine.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-5 {
+  background: url("../images/vaccine-wars.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-6 {
+  background: url("../images/mikrobiom-intestines.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-7 {
+  background: url("../images/darkside.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-8 {
+  background: url("../images/womb.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-9 {
+  background: url("../images/crisp.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-10 {
+  background: url("../images/nay_2.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-11 {
+  background: url("../images/medical-channel.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-12 {
+  background: url("../images/k-i.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-13 {
+  background: url("../images/woman.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-14 {
+  background: url("../images/scince-rich.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__item-foto-15 {
+  background: url("../images/eye.jpg") no-repeat center;
+  background-size: contain; }
+
+.min-fotos__day {
+  padding-top: 25px;
+  padding-bottom: 14px; }
+
+.min-fotos__grey {
+  background-color: #F8F8F8; }
+
+.main-surgery {
+  padding-bottom: 56px; }
+
+.main-surgery__title {
+  margin-top: 96px;
+  margin-bottom: 76px;
+  text-align: center;
+  font-family: LucidaGrande-Bold;
+  font-size: 36px;
+  line-height: 43px; }
+
+.main-surgery .container {
+  padding: 0 115px; }
+
+.posters__item {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 167px;
+  width: 100%;
+  margin-right: 4.3%; }
+
+.posters__item:nth-child(n+5) {
+  margin-right: 0; }
+
+.posters__item-text {
+  color: #515666;
+  font-size: 12px;
+  line-height: 14px; }
+
+.posters__item-foto {
+  display: block;
+  height: 219px;
+  width: 167px;
+  margin-bottom: 10px; }
+
+.posters__item-foto-1 {
+  background: url("../images/vaccine-wars.jpg") no-repeat center;
+  background-size: contain; }
+
+.posters__item-foto-2 {
+  background: url("../images/vaccine.jpg") no-repeat center;
+  background-size: contain; }
+
+.posters__item-foto-3 {
+  background: url("../images/mouth.jpg") no-repeat center;
+  background-size: contain; }
+
+.posters__item-foto-4 {
+  background: url("../images/pain.jpg") no-repeat center;
+  background-size: contain; }
+
+.posters__item-foto-5 {
+  background: url("../images/stress-brain.jpg") no-repeat center;
+  background-size: contain; }
+
+.posters__item-foto-6 {
+  background: url("../images/mikrobiom-intestines.jpg") no-repeat center;
+  background-size: contain; }
+
+.posters__item-foto-7 {
+  background: url("../images/darkside.jpg") no-repeat center;
+  background-size: contain; }
+
+.posters__item-foto-8 {
+  background: url("../images/womb.jpg") no-repeat center;
+  background-size: contain; }
+
+.posters__item-foto-9 {
+  background: url("../images/crisp.jpg") no-repeat center;
+  background-size: contain; }
+
+.posters__item-foto-10 {
+  background: url("../images/nay_2.jpg") no-repeat center;
+  background-size: contain; }
+
+.posters__item-foto-11 {
+  background: url("../images/scince-rich.jpg") no-repeat center;
+  background-size: contain; }
+
+.posters__item-foto-12 {
+  background: url("../images/eye.jpg") no-repeat center;
+  background-size: contain; }
+
+.posters__wrapper {
+  padding-top: 27px;
+  padding-bottom: 18px; }
+
+.posters__item-data {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-family: LucidaGrande-Bold;
+  font-size: 12px;
+  line-height: 15px; }
+
+.posters__item-data::after {
+  content: '';
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  background-color: #0EA4FB;
+  border-radius: 50%;
+  right: -15px;
+  top: 3px; }
+
+
+
+/*# sourceMappingURL=app.css.map*/
